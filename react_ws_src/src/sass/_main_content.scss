@@ -4,7 +4,7 @@
 	position:relative;
 	padding:0 30px;
 
-	color: #fff;
+	color: #333;
 	font-family: $bodyFont;
 	@include font-size(16px);
 
@@ -19,26 +19,31 @@
 		font-family: "FontAwesome";
 	}
 
-		a {
-			color: #ccc;
-			font-weight: 800;
-			font-style: italic;			
+	a {
+		// color: #ccc;
+		font-weight: 800;
+		font-style: italic;			
 
-		}
+	}
+
+	hr {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 
 }
 
 
 .simple_list{
 	list-style-type: none;
-	padding: 10px;
+	padding: 12px;
 
 	li {
 		margin: 5px;
-		@include font-size(18px);
+		// @include font-size(18px);
 
 		label {
-			padding-left: 10px;
+			padding-left: 20px;
 		} 
 	}
 }

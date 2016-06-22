@@ -1,4 +1,4 @@
-jest.unmock('../find_obj_by_val'); // unmock to use the actual implementation of find_obj_by_val
+jest.unmock('../find_obj_by_val');
 import find_obj_by_val from '../find_obj_by_val'
 
 const exm_obj = [

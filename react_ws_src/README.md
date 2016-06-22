@@ -25,7 +25,7 @@ Install all the packages
 npm install
 ~~~
 
-To start the development web server use the following command and turn your browser to [http://0.0.0.0:3000](http://0.0.0.0:3000) 
+To start the development web server use the following command and turn your browser to [http://localhost:3000](http://localhost:3000) or [http://0.0.0.0:3000](http://0.0.0.0:3000) 
 
 ~~~bash
 npm start

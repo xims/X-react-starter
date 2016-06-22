@@ -28,7 +28,7 @@ const prep_env = function (ca) {
 
 				if (err || !res.ok) {
 					alert('Can\'t load site configuration')
-					console.log('Can\'t load site configuration')
+					console.log('Can\'t load site configuration', err)
 					return
 				}
 
@@ -78,7 +78,7 @@ const prep_env = function (ca) {
 			app.settings.mobile_type = navigator.userAgent.match(/Android/i) ? 'Android' :
 										( navigator.userAgent.match(/iPad|iPhone|iPod/i) ? 'iOS' : null)
 
-// app.settings.is_mobile = true
+		// app.settings.is_mobile = true
 
 		app.settings.can_app = !!app.settings.mobile_type
 		app.settings.couldHaveFlash = !app.settings.is_mobile

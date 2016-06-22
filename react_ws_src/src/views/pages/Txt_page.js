@@ -12,8 +12,11 @@ export default class Txt_page extends Component {
 //	------------------------	------------------------	------------------------
 
 	render () {
-		const { page } = this.props.params
+		// const { page } = this.props.params
+		const page = this.props.params.page || 'home' 
 		const page_x = app.settings.ws_conf.pgs[page]
+
+		// console.log('Txt_page', page)
 
 		if (!page || !page_x) return null
 

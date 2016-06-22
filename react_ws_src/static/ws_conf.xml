@@ -30,8 +30,9 @@
 
 	<main_menu>
 		<pages>
-			<p		name="User"				u="user"			ico="fa fa-user"		/>
-			<p		name="Page"				u="pg/txtpg"		ico="fa fa-file-text"		/>
+			<p		name="Home"				u="/"					ico="fa fa-home"		/>
+			<p		name="User"				u="/user"				ico="fa fa-user"		/>
+			<p		name="Info"				u="/pg/info"			ico="fa fa-info"		/>
 		</pages>
 	</main_menu>
 
@@ -51,8 +52,8 @@
 			<i 		tp='ln'			txt='privacy'					u='pupg/privacy-policy'	/>
 			<i 		tp='ln'			txt='contact us'				u='contact-us'	/>
 		</items>
-		<foot_msg		txt='This is a minimal React.js pack combined from different sources.'	/>
-		<foot_r_logo	i='images/k_logo.png'	u='http://www.kisla.com'	t='_blank'		/>
+		<foot_msg		txt='A minimal React.js starter pack combined from different sources.'	/>
+		<foot_r_logo	i='images/K_logo.png'	u='http://www.kisla.com'	t='_blank'		/>
 	</footer>
 
 
@@ -60,15 +61,64 @@
 <!--	========================	========================	========================	-->
 
 	<pgs>
-		<txtpg		pg_name='Standard text page defined in conf xml'>
+
+<!--	========================	========================	========================	-->
+
+		<home		pg_name='Home'>
 			<![CDATA[
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<section id='Home'>
+			<div id='page-container'>
+				<h3>This is a simple example of React.js stack based website</h3>
 				<br/>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<h4>Major libraries used:</h4>
+				<ul class='simple_list'>
+					<li>react</li>
+					<li>webpack</li>
+					<li>babel</li>
+					<li>react-router</li>
+					<li>ampersand</li>
+					<li>sass</li>
+					<li>jest</li>
+				</ul>
+
 				<br/>
-				<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h3>Configurable with external XML file - <a href="./ws_conf.xml" target='blank'>ws_conf.xml</a></h3>
+
+				<br/><br/>
+				<h2>For demonstration purposes.</h2>
+				<br/>
+
+				<a href="/pg/info">
+					<button type='submit' class='button'><span>INFO <span class='fa fa-caret-right'></span></span></button>
+				</a>
+
+			</div>
+		</section>
 			]]>
-		</txtpg>
+		</home>
+
+<!--	========================	========================	========================	-->
+
+		<info		pg_name="Info">
+			<![CDATA[
+				<div>This is a simple website built with React.js.</div>
+				
+				<div>
+				 view source at  <a href='https://github.com/xims/X-react-starter'>github.com/xims/X-react-starter</a></div>
+
+				<br/>
+				<h4>For demonstration purposes.</h4>
+				<br/>
+
+				<a href="/">
+					<button type='submit' class='button'><span>HOME <span class='fa fa-caret-right'></span></span></button>
+				</a>
+			]]>
+		</info>
+
+<!--	========================	========================	========================	-->
+
+
 
 		<terms-and-conditions		pg_name='WEBSITE TERMS AND CONDITIONS'>
 			<![CDATA[

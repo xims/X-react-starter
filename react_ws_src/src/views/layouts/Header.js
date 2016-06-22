@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router'
-import jquery from 'jquery'
+// import jquery from 'jquery'
 
 import MessageBar from '../layouts/MessageBar'
 

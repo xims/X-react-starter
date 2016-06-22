@@ -16,9 +16,6 @@ app.settings.ws_conf = conf_json.data
 // let app = {}
 // app.settings = {}
 // app.settings.ws_conf = null
-// app.settings.user_types = {}
-// app.settings.basket_type = null
-// app.settings.basket_total = 0
 app.settings = {
 		ws_conf: null,
 	}

@@ -2,7 +2,6 @@ import React, { Component} from 'react'
 import Header from './layouts/Header'
 import MainContent from './layouts/MainContent'
 import Footer from './layouts/Footer'
-import Home from './pages/Home'
 
 export default class Main extends Component {
 
@@ -12,7 +11,6 @@ export default class Main extends Component {
 			<div style={fullHeight}>
 				<Header/>
 				<MainContent>
-					<Home />
 					{ mainContent }
 				</MainContent>
 				<Footer />

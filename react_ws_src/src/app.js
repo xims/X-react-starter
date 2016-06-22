@@ -1,13 +1,14 @@
-import './sass/main.scss'
-
-import app from 'ampersand-app'
 import React from 'react'
+import app from 'ampersand-app'
 import { render } from 'react-dom'
 import { Router, Route, Redirect, IndexRoute, browserHistory  } from 'react-router'
 import { createHistory, useBasename } from 'history'
+import ga from 'react-ga'
+
+import './sass/main.scss'
 
 import Main from './views/Main'
-import Home from './views/pages/Home'
+
 
 import Txt_page from './views/pages/Txt_page'
 import PopUp_page from './views/pages/PopUp_page'
@@ -18,13 +19,14 @@ import ErrorPage from './views/pages/ErrorPage'
 
 import prep_env from './models/prep_env'
 
-import ga from 'react-ga'
 
 
 let renderSite = function () {
 	return render((
 		<Router history={browserHistory}>
 			<Route path='/' component={Main}>
+
+				<IndexRoute components={{mainContent: Txt_page}} />
 
 				<Route path='/pg/(:page)' components={{mainContent: Txt_page}} />
 				<Route path='/user' components={{mainContent: User}} />
