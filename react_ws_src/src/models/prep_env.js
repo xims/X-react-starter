@@ -3,10 +3,6 @@ import X2JS from 'x2js'
 
 import '../../static/ws_conf.xml'
 
-import rand_to_fro from '../helpers/rand_to_fro'
-import rand_arr_elem from '../helpers/rand_arr_elem'
-
-
 const prep_env = function (ca) {
 
 	// console.log("prep_env with : ", data_js, card_type, team, pos, sort);

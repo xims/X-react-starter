@@ -42,8 +42,8 @@ export default class Contact extends Component {
 			<form id='contact_form'>
 
 				<FieldHolder ref='nameHolder' goodClasses='input_holder left' badClass='error' isValid={nameValid}>
-					<label>Coach Name <span className='required'>is a required field</span></label>
-					<input ref='name' type='text' className='input name' placeholder='Coach Name or Real Name' onBlur={this.checkOnBlurr.bind(this)} />
+					<label>Name <span className='required'>is a required field</span></label>
+					<input ref='name' type='text' className='input name' placeholder='Name' onBlur={this.checkOnBlurr.bind(this)} />
 				</FieldHolder>
 
 				<FieldHolder ref='emailHolder' goodClasses='input_holder left' badClass='error' isValid={emailValid}>

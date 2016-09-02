@@ -64,7 +64,8 @@
 
 <!--	========================	========================	========================	-->
 
-		<home		pg_name='Home'>
+		<home		pg_name="Home">
+			<txt>
 			<![CDATA[
 		<section id='Home'>
 			<div id='page-container'>
@@ -88,18 +89,19 @@
 				<h2>For demonstration purposes.</h2>
 				<br/>
 
-				<a href="/pg/info">
-					<button type='submit' class='button'><span>INFO <span class='fa fa-caret-right'></span></span></button>
-				</a>
-
 			</div>
 		</section>
 			]]>
+			</txt>
+			<btns>
+				<b txt='INFO' u='/pg/info' />
+			</btns>
 		</home>
 
 <!--	========================	========================	========================	-->
 
 		<info		pg_name="Info">
+			<txt>
 			<![CDATA[
 				<div>This is a simple website built with React.js.</div>
 				
@@ -110,10 +112,11 @@
 				<h4>For demonstration purposes.</h4>
 				<br/>
 
-				<a href="/">
-					<button type='submit' class='button'><span>HOME <span class='fa fa-caret-right'></span></span></button>
-				</a>
 			]]>
+			</txt>
+			<btns>
+				<b txt='HOME' u='/' />
+			</btns>
 		</info>
 
 <!--	========================	========================	========================	-->
